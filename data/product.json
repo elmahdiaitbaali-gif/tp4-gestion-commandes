@@ -1,0 +1,58 @@
+[
+  {
+    "id": 10,
+    "name": "T-shirt Basic",
+    "category": "T-shirts",
+    "price": 150,
+    "stock": 20
+  },
+  {
+    "id": 11,
+    "name": "T-shirt Oversize",
+    "category": "T-shirts",
+    "price": 200,
+    "stock": 15
+  },
+  {
+    "id": 12,
+    "name": "Jean Bleu",
+    "category": "Pantalons",
+    "price": 350,
+    "stock": 10
+  },
+  {
+    "id": 13,
+    "name": "Jean Noir",
+    "category": "Pantalons",
+    "price": 380,
+    "stock": 8
+  },
+  {
+    "id": 14,
+    "name": "Sweat Capuche",
+    "category": "Sweats",
+    "price": 450,
+    "stock": 12
+  },
+  {
+    "id": 15,
+    "name": "Sweat Noir",
+    "category": "Sweats",
+    "price": 420,
+    "stock": 10
+  },
+  {
+    "id": 16,
+    "name": "Veste Jean",
+    "category": "Vestes",
+    "price": 600,
+    "stock": 6
+  },
+  {
+    "id": 17,
+    "name": "Veste Noire",
+    "category": "Vestes",
+    "price": 650,
+    "stock": 5
+  }
+]
