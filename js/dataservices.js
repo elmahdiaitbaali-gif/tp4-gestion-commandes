@@ -5,7 +5,7 @@ export async function loadData() {
     const ordersResponse = await fetch("../data/orders.json");
 
     if (!customersResponse.ok || !productsResponse.ok || !ordersResponse.ok) {
-      throw new Error("Erreur de chargement");
+      throw new Error("Impossible de charger les fichiers JSON");
     }
 
     const customers = await customersResponse.json();
