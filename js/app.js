@@ -1,6 +1,6 @@
 import { state } from "./state.js";
 import { loadData } from "./dataservices.js";
-import { filterOrders, getOrderTotal } from "./selectors.js";
+import { filterOrders, getOrderTotal, getProduct, getProductAmount } from "./selectors.js";
 import { render } from "./view.js";
 
 const app = document.querySelector("#app");
@@ -52,11 +52,8 @@ function showDetail(id) {
   message += "Statut : " + order.status + "\n\n";
 
   order.items.forEach(item => {
-    const product = state.products.find(
-      product => product.id === item.productId
-    );
-
-    const amount = product.price * item.quantity;
+   const product = getProduct(item, state.products);
+const amount = getProductAmount(item, state.products);
 
     message += product.name + "\n";
     message += "Prix : " + product.price + " MAD\n";

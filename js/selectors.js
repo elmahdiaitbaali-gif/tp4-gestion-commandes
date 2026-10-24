@@ -5,16 +5,16 @@ export function getCustomer(order, customers) {
 export function getProduct(item, products) {
   return products.find(product => product.id === item.productId);
 }
-
+export function getProductAmount(item, products) {
+  const product = getProduct(item, products);
+  return product.price * item.quantity;
+}
 export function getOrderTotal(order, products) {
-let total = 0;
-
-order.items.forEach(item => {
-const product = getProduct(item, products);
-total += product.price * item.quantity;
-});
-
-return total;
+  let total = 0;
+  order.items.forEach(item => {
+    total += getProductAmount(item, products);
+  });
+  return total;
 }
 
 export function getOrdersData(orders, customers, products) {
